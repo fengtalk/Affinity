@@ -4,8 +4,7 @@
 <?php while($this->next()): ?>
   <article class="content-card post">
     <div class="card">
-      <a href="<?php $this->permalink() ?>" class="card-image " style="background-image: url(<?php if (array_key_exists('img',unserialize($this->___fields()))): ?><?php $this->fields->img(); ?><?php else: ?><?php
-preg_match_all("/\<img.*?src\=(\'|\")(.*?)(\'|\")[^>]*>/i", $this->content, $matches);
+      <a href="<?php $this->permalink() ?>" class="card-image " style="background-image: url(<?php if (array_key_exists('img',unserialize($this->___fields()))): ?><?php $this->fields->img(); ?><?php else: ?><?php preg_match_all("/\<img.*?src\=(\'|\")(.*?)(\'|\")[^>]*>/i", $this->content, $matches);
 $imgCount = count($matches[0]);
 if($imgCount >= 1){
 $img = $matches[2][0];
@@ -13,7 +12,8 @@ echo <<<Html
 {$img}
 Html;
 }
-?><?php endif; ?>)">
+?>
+<?php endif; ?>)">
       </a>
       <header class="card-header">
         <div class="card-title">
