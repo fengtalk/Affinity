@@ -5,9 +5,7 @@
  *
  * @package custom
  */
-
   $this->need('header.php'); ?>
-
 <article class="content-post content-page post page" role="main">
   <div class="content-post-title">
     <h1><?php $this->title() ?></h1>
@@ -15,7 +13,7 @@
   <div class="content-post-body">
     <form method="post" action="/" role="search" style="max-width:500px;">
   <div class="input-group">
-    <input class="form-input input-lg" type="text" placeholder="关键词" name="s" /> <button class="btn btn-primary input-group-btn btn-lg">SEARCH</button> 
+    <input class="form-input input-lg" type="text" placeholder="关键词" name="s" /> <button class="btn btn-primary input-group-btn btn-lg">搜索</button> 
   </div>
 </form>
   </div>
@@ -23,24 +21,19 @@
     <div class="tile">
       <div class="tile-icon">
         <figure class="gavatar avatar-lg">
-          <img src="https://img.qianduanmei.com/static/img/qdm.jpg" />
+          <img src="https://secure.gravatar.com/avatar/c008349e25e407c537a94195980ae9d4" />
         </figure>
       </div>
       <div class="tile-content">
-        <p class="tile-title"><strong>前端美</strong></p>
-            <p class="tile-subtitle">一个非盈利性博客站点，主要发布一些国内外常规的前端资讯信息，包括css3/html5等。</p>
+        <p class="tile-title"><strong>fengtalk</strong></p>
+            <p class="tile-subtitle">生命不息，折腾不止，这里是首席打杂官笔记。</p>
       </div>
     </div>
   </div>
-
   <div class="content-post-comments">
   </div>
-
   <div class="doc_comments">
   <?php $this->need('comments.php'); ?>
   </div>
-
 </article>
-
-
 <?php $this->need('footer.php'); ?>

@@ -33,11 +33,8 @@ Html;
   </article>
 <?php endwhile; ?>
 </div>
-
 <nav class="pagination" role="navigation">
 <?php $this->pageLink('<x aria-label="Previous" class="btn btn-primary">上一页</x>'); ?>
 <?php $this->pageLink('<x aria-label="Next" class="btn btn-primary">下一页</x>','next'); ?>
 </nav>
-
-
 <?php $this->need('footer.php'); ?>

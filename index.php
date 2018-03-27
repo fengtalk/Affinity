@@ -1,17 +1,14 @@
 <?php
 /**
- * 这是 前端美博客制作的一款typecho博客程序 原创设计来自开源主题Affinity 地址：https://github.com/Showfom/Affinity
- * 
- * @package Typecho Replica Theme 
- * @author Typecho.ME Team
- * @version 2017.07.28
- * @link https://typecho.me/
+ * 原创设计来自开源主题Affinity 地址：https://github.com/Showfom/Affinity
+ * @package Typecho Affinity Theme
+ * @author fengtalk.Based onTypecho.ME Team
+ * @version 2018.03.27
+ * @link https://fengtalk.com/
  */
-
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
  $this->need('header.php');
  ?>
-
 <div class="content-cards">
 <?php while($this->next()): ?>
   <article class="content-card post">
@@ -45,11 +42,8 @@ Html;
   </article>
 <?php endwhile; ?>
 </div>
-
 <nav class="pagination" role="navigation">
 <?php $this->pageLink('<x aria-label="Previous" class="btn btn-primary">上一页</x>'); ?>
 <?php $this->pageLink('<x aria-label="Next" class="btn btn-primary">下一页</x>','next'); ?>
 </nav>
-
-
 <?php $this->need('footer.php'); ?>
