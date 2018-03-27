@@ -20,10 +20,9 @@
       </div>
     </div>
   </div>
-  <div class="content-post-comments">
-  </div>
+<!--   <div class="content-post-comments"></div>
   <div class="doc_comments">
   <?php $this->need('comments.php'); ?>
-  </div>
+  </div> -->
 </article>
 <?php $this->need('footer.php'); ?>
